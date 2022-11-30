@@ -1,0 +1,34 @@
+<?php
+
+declare(strict_types=1);
+
+use Elgentos\PrismicIO\Block\Template;
+use Hyva\Theme\Model\ViewModelRegistry;
+use Hyva\Theme\ViewModel\HeroiconsOutline;
+use Magento\Framework\Escaper;
+
+/** @var Template $block */
+/** @var Escaper $escaper */
+/** @var ViewModelRegistry $viewModels */
+/** @var HeroiconsOutline $heroIcons */
+$heroIcons = $viewModels->require(HeroiconsOutline::class);
+?>
+
+<div class="faq-item border-t border-gray-lightest cursor-pointer pl-4 pt-4 pb-2" x-data="{show<?= $escaper->escapeHtmlAttr(uniqid('_')) ?>: false }">
+    <div class="text-base font-bold text-blue-dark flex justify-between" @click="show<?= $escaper->escapeHtmlAttr(uniqid('_')) ?> = !show<?= $escaper->escapeHtmlAttr(uniqid('_')) ?>">
+        <?= /** @noEscape */ $block->getChildHtml('faq.item.title') ?>
+        <div>
+            <div class="rounded-full bg-orange h-6 en w-6" x-show="!show<?=$escaper->escapeHtmlAttr(uniqid('_'))?>">
+                <?= /** @noEscape */
+                $heroIcons->renderHtml('plus', 'text-white text-sm full-current rounded-full') ?>
+            </div>
+            <div class="rounded-full bg-orange h-6 en w-6" x-show="show<?=$escaper->escapeHtmlAttr(uniqid('_'))?>">
+                <?= /** @noEscape */
+                $heroIcons->renderHtml('minus', 'text-white text-sm full-current rounded-full') ?>
+            </div>
+        </div>
+    </div>
+    <div class="faq-text py-6 transition-all" data-alpinevar="show<?= $escaper->escapeHtmlAttr(uniqid('_')) ?>" x-show="show<?= $escaper->escapeHtmlAttr(uniqid('_')) ?>">
+        <?= /** @noEscape */ $block->getChildHtml('faq.item.text') ?>
+    </div>
+</div>

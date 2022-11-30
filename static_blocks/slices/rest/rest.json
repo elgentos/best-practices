@@ -1,0 +1,83 @@
+{    
+    "payment_methods" : {
+    "type" : "Slice",
+    "fieldset" : "Payment methods",
+    "description" : "Payment Methods with optional Links",
+    "icon" : "payment",
+    "display" : "list",
+    "non-repeat" : { },
+    "repeat" : {
+      "image" : {
+        "type" : "Image",
+        "config" : {
+          "constraint" : { },
+          "thumbnails" : [ ],
+          "label" : "Image"
+        }
+      },
+      "link" : {
+        "type" : "Link",
+        "config" : {
+          "label" : "Link",
+          "select" : null
+        }
+      },
+      "label" : {
+        "type" : "Text",
+        "config" : {
+          "label" : "Label",
+          "placeholder" : "This is the label for the image (alt text)"
+        }
+      }
+    }
+  },
+  "sidebar_help_block" : {
+    "type" : "Slice",
+    "fieldset" : "Hulp Block",
+    "description" : "Hulp blokje in de sidebar",
+    "icon" : "question_answer",
+    "display" : "list",
+    "non-repeat" : {
+      "image" : {
+        "type" : "Image",
+        "config" : {
+          "constraint" : { },
+          "thumbnails" : [ ],
+          "label" : "Image"
+        }
+      },
+      "title" : {
+        "type" : "StructuredText",
+        "config" : {
+          "single" : "heading2",
+          "label" : "Title",
+          "placeholder" : "Help titel"
+        }
+      },
+      "text" : {
+        "type" : "StructuredText",
+        "config" : {
+          "multi" : "paragraph",
+          "label" : "text",
+          "placeholder" : "Beschrijving"
+        }
+      },
+      "link_text" : {
+        "type" : "Text",
+        "config" : {
+          "label" : "Link text",
+          "placeholder" : "Link tekst"
+        }
+      },
+      "link_url" : {
+        "type" : "Link",
+        "config" : {
+          "label" : "Link url",
+          "placeholder" : "Link naar help",
+          "select" : null
+        }
+      }
+    },
+    "repeat" : { }
+  }
+}

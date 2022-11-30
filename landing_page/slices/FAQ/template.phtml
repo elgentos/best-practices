@@ -1,0 +1,20 @@
+<?php
+
+declare(strict_types=1);
+
+use Elgentos\PrismicIO\Block\Template;
+use Magento\Framework\Escaper;
+
+/** @var $block Template */
+/** @var $escaper Escaper */
+
+?>
+<div class="flex flex-row md:flex-col md:gap-2 pt-8 pb-12">
+    <div class="text-2xl text-blue-dark py-4 font-bold">
+        <?= $block->getChildHtml('faq.title') ?>
+    </div>
+    <div class="pb-4">
+        <?= $block->getChildHtml('faq.text') ?>
+    </div>
+    <?= $block->getChildHtml('items') ?>
+</div>

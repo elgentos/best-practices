@@ -1,0 +1,44 @@
+{
+  "navigation_list" : {
+    "type" : "Slice",
+    "fieldset" : "Navigation List",
+    "description" : "Navigation Item with subnavigation",
+    "icon" : "menu",
+    "display" : "list",
+    "non-repeat" : {
+      "title" : {
+        "type" : "Text",
+        "config" : {
+          "label" : "Title",
+          "placeholder" : "This is the text on top of the list"
+        }
+      },
+      "link" : {
+        "type" : "Link",
+        "config" : {
+          "label" : "Link",
+          "select" : null,
+          "placeholder" : "You can link to a page (optional)"
+        }
+      }
+    },
+    "repeat" : {
+      "label" : {
+        "type" : "StructuredText",
+        "config" : {
+          "single" : "strong,em",
+          "label" : "Label",
+          "placeholder" : "This is the text for the label"
+        }
+      },
+      "link" : {
+        "type" : "Link",
+        "config" : {
+          "label" : "Link",
+          "select" : null,
+          "placeholder" : "Select the link (use https://{{relative}} for internal links)"
+        }
+      }
+    }
+  }
+}

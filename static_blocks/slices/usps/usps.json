@@ -1,0 +1,26 @@
+{
+  "usps" : {
+    "type" : "Slice",
+    "fieldset" : "USP's",
+    "description" : "Unique Selling Points",
+    "icon" : "add_shopping_cart",
+    "display" : "list",
+    "non-repeat" : { },
+    "repeat" : {
+      "usp_item" : {
+        "type" : "StructuredText",
+        "config" : {
+          "single" : "strong,em",
+          "label" : "Usp Item",
+          "placeholder" : "Describe what is awesome"
+        }
+      },
+      "usp_index" : {
+        "type" : "Number",
+        "config" : {
+          "label" : "Usp Index"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+<!-- ...xml -->
+<?xml version="1.0" encoding="UTF-8" ?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+    <body>
+        <block name="prismicio.landingpage.slices.faq_items"
+               class="Elgentos\PrismicIO\Block\Template"
+               template="Elgentos_PrismicIO::pages/elements/itemsaccordion.phtml">
+            <block name="prismicio.landingpage.slices.faq_items.header.title"
+                   class="Elgentos\PrismicIO\Block\Dom\RichText"
+                   template="primary.faq_header"
+                   as="faq.title"/>
+            <block name="prismicio.landingpage.slices.faq_items.header.text"
+                   class="Elgentos\PrismicIO\Block\Dom\RichText"
+                   template="primary.faq_header_text"
+                   as="faq.text"/>
+
+            <block name="prismicio.landingpage.prismicio.landingpage.slices.faq_items.items"
+                   class="Elgentos\PrismicIO\Block\Group"
+                   template="items"
+                   as="items">
+
+                <block name="prismicio.landingpage.prismicio.landingpage.slices.faq_items.item"
+                       class="Elgentos\PrismicIO\Block\Template"
+                       template="Elgentos_PrismicIO::elements/item.phtml">
+
+                    <block class="Elgentos\PrismicIO\Block\Dom\RichText"
+                           name="prismicio.prismicio.landingpage.slices.faq_items.title"
+                           template="accordeon_item_title"
+                           as="faq.title"/>
+                    <block class="Elgentos\PrismicIO\Block\Dom\RichText"
+                           name="prismicio.prismicio.landingpage.slices.faq_items.text"
+                           template="accordeon_item_content"
+                           as="faq.text"/>
+                </block>
+            </block>
+        </block>
+    </body>
+</page>

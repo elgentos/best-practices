@@ -1,0 +1,22 @@
+<!-- prismicio_static_usps.xml -->
+<?xml version="1.0" encoding="UTF-8" ?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <block name="prismicio.static.slices.usps" class="Elgentos\PrismicIO\Block\Container">
+            <action method="addData">
+                <argument name="data" xsi:type="array">
+                    <item name="htmlTag" xsi:type="string">div</item>
+                    <item name="htmlClass" xsi:type="string">flex flex-col space-y-2 mt-8</item>
+                </argument>
+            </action>
+
+            <block class="Elgentos\PrismicIO\Block\Group" template="items">
+                <block class="Elgentos\PrismicIO\Block\Template" template="Elgentos_PrismicIO::elements/usp-item-with-solid-check.phtml">
+                    <block class="Elgentos\PrismicIO\Block\Dom\Text" as="usp" template="usp_item"/>
+                </block>
+            </block>
+        </block>
+    </body>
+</page>
+
+

@@ -1,0 +1,177 @@
+{
+    "Main" : {
+      "uid" : {
+        "type" : "UID",
+        "config" : {
+          "label" : "uid"
+        }
+      },
+      "body" : {
+        "type" : "Slices",
+        "fieldset" : "Slice zone",
+        "config" : {
+          "labels" : null,
+          "choices" : {
+            "upper_links_block" : {
+              "type" : "Slice",
+              "fieldset" : "Footer Navigation",
+              "description" : "Footer Navigation",
+              "icon" : "insert_link",
+              "display" : "list",
+              "non-repeat" : {
+                "title" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label" : "Title"
+                  }
+                }
+              },
+              "repeat" : {
+                "link" : {
+                  "type" : "Link",
+                  "config" : {
+                    "allowTargetBlank" : true,
+                    "label" : "Link",
+                    "select" : null
+                  }
+                },
+                "link_name" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label" : "Name"
+                  }
+                }
+              }
+            },
+            "lower_links_block" : {
+              "type" : "Slice",
+              "fieldset" : "Bottom Navigation",
+              "description" : "Navigation at the bottom of the page",
+              "icon" : "insert_link",
+              "display" : "list",
+              "non-repeat" : { },
+              "repeat" : {
+                "link" : {
+                  "type" : "Link",
+                  "config" : {
+                    "allowTargetBlank" : true,
+                    "label" : "Link",
+                    "select" : null
+                  }
+                },
+                "link_name" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label" : "Name"
+                  }
+                }
+              }
+            },
+            "social_media_block" : {
+              "type" : "Slice",
+              "fieldset" : "Social Media",
+              "description" : "Social Media Links",
+              "icon" : "view_module",
+              "display" : "list",
+              "non-repeat" : {
+                "title" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label" : "Title"
+                  }
+                }
+              },
+              "repeat" : {
+                "icon" : {
+                  "type" : "Select",
+                  "config" : {
+                    "options" : [ "facebook", "instagram", "linkedin", "pinterest" ],
+                    "label" : "Icon"
+                  }
+                },
+                "link" : {
+                  "type" : "Link",
+                  "config" : {
+                    "label" : "Link",
+                    "placeholder" : "#",
+                    "select" : null
+                  }
+                }
+              }
+            },
+            "copyright" : {
+              "type" : "Slice",
+              "fieldset" : "Copyright",
+              "description" : "Copyright in the footer",
+              "icon" : "account_balance",
+              "display" : "list",
+              "non-repeat" : {
+                "text" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label" : "Text"
+                  }
+                }
+              },
+              "repeat" : { }
+            },
+            "logo_block" : {
+              "type" : "Slice",
+              "fieldset" : "Logo Block",
+              "description" : "Logo Block for Payment or Shipping Methods",
+              "icon" : "image",
+              "display" : "list",
+              "non-repeat" : {
+                "title" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label" : "Title"
+                  }
+                }
+              },
+              "repeat" : {
+                "image" : {
+                  "type" : "Image",
+                  "config" : {
+                    "constraint" : { },
+                    "thumbnails" : [ ],
+                    "label" : "Image"
+                  }
+                },
+                "link" : {
+                  "type" : "Link",
+                  "config" : {
+                    "label" : "Link",
+                    "select" : null
+                  }
+                }
+              }
+            },
+            "text_block" : {
+              "type" : "Slice",
+              "fieldset" : "Text Block",
+              "description" : "Text Block",
+              "icon" : "short_text",
+              "display" : "list",
+              "non-repeat" : {
+                "title" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label" : "Title"
+                  }
+                },
+                "content" : {
+                  "type" : "StructuredText",
+                  "config" : {
+                    "multi" : "strong,em,hyperlink,image",
+                    "label" : "Content"
+                  }
+                }
+              },
+              "repeat" : { }
+            }
+          }
+        }
+      }
+    }
+  }

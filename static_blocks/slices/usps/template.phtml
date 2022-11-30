@@ -1,0 +1,20 @@
+<?php
+// elements/usp-item-with-solid-check.phtml
+
+use Elgentos\PrismicIO\Block\Template;
+use Hyva\Theme\Model\ViewModelRegistry;
+use Hyva\Theme\ViewModel\HeroiconsSolid;
+use Magento\Framework\Escaper;
+
+/** @var Template $block */
+/** @var Escaper $escaper */
+/** @var ViewModelRegistry $viewModels */
+
+/** @var HeroiconsSolid $heroicons */
+$heroicons = $viewModels->require(HeroiconsSolid::class);
+?>
+
+<div class="flex flex-row space-x-2 items-center">
+    <?= $heroicons->checkHtml("p-1 h-6 w-6 text-white fill-current bg-green rounded-full", 25, 25) ?>
+    <span> <?= $block->getChildHtml('usp'); ?></span>
+</div>
