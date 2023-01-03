@@ -1,24 +1,9 @@
 # Elgentos Best Practices
 
-This is a collection of prefered elgentos coding principles and examples. These examples mainly but not excluxsively comprise of of prismicIO use cases.
+This repository contains best coding practices, primarily focusing on PrismicIO use cases. It includes examples often used magento prismic elements. The different examples need to include the JSON as well as template, when applicable, and layout files. Only the relevant portion of the JSON for each Prismic element should be included. The examples for each element should be cojntained in a separate folder with a README file explaining the implementation of that element. The folder should contain at least a `.json` and layout `.xml` file (structure up for debate). 
 
-PrismicIO elements within this repo should contain the json used in prismic.io and examples of the template and layout files. Only the part of the json should be included that is part of that prismic element. The examples should be included in a seperate folder containing an readme for that element of the implementation of the element. The folder should at least contain a json and layout.xml file. A template file is optional as some implementations can use markup included in the layout.
+Elements that may be included in this repository include static elements, slices, and often used Prismic pages such as landing pages, header and footer navigation, and "about us" pages.
 
-Included can be static elements or ... or slices
+## Notes on Development
 
-## Often used prismic elements or pages
-
-Included list of often used prismic magento elements/pages. By no means complete
-
-- Landing page
-- Header navigation
-- Footer navigation
-- about us page
-- Usps
-- [...more]
-
-## Notes
-
-For the prismic part alone a lot of work needs to be done for this repo to be of any use. It needs input on the setup of the project, folder structure and included elements/pages/slices/statuc elements and posibly more. 
-
-Other often used magento elements can be added. Perhaps a list of usefull modules with their use cases. But a case could be made to keep this repository soley a list of prismicio elements with their basic implementations and perhaps links to projects where they are in use.
+In order for this repository to be useful, further work is needed; establish a folder structure, and include a comprehensive list of elements, pages, slices, and static elements. It may also be useful to include a list of useful Magento modules and their use cases. Alternatively, this repository could focus solely on PrismicIO elements, with links to projects where they are in use. If the scope of this repository expands beyond Prismic best practices, it is probably best to encapsulate the PrismicIO examples in their own folder.
