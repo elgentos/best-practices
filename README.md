@@ -1,4 +1,4 @@
-# Elgentos Standards Repostiory
+# Elgentos Best Practices
 
 This is a collection of prefered elgentos coding principles and examples. These examples mainly but not excluxsively comprise of of prismicIO use cases.
 
