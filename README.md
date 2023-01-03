@@ -15,7 +15,7 @@ Included list of often used prismic magento elements/pages. By no means complete
 - Footer navigation
 - about us page
 - Usps
-[...more]
+- [...more]
 
 ## Notes
 
