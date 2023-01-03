@@ -8,10 +8,17 @@ Included can be static elements or ... or slices
 
 ## Often used prismic elements or pages
 
-Included list of often udes prismic magento elements/pages.
+Included list of often used prismic magento elements/pages. By no means complete
 
-- landing page
+- Landing page
+- Header navigation
 - Footer navigation
 - about us page
 - Usps
-- 
+[...more]
+
+## Notes
+
+For the prismic part alone a lot of work needs to be done for this repo to be of any use. It needs input on the setup of the project, folder structure and included elements/pages/slices/statuc elements and posibly more. 
+
+Other often used magento elements can be added. Perhaps a list of usefull modules with their use cases. But a case could be made to keep this repository soley a list of prismicio elements with their basic implementations and perhaps links to projects where they are in use.
